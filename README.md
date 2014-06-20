@@ -7,7 +7,7 @@ This contains my personal Vim configuration and plugins. The idea is to replace 
 Delete the existing .vim folder. Make sure you don't have anything important in there!
 ```
 cd
-git clone https://github.com/dressel/dotvim.git .vim
+git clone https://github.com/dressel/dotvim.git ~/.vim
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 echo "runtime vimrc" > .vimrc
 ```
