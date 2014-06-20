@@ -4,6 +4,7 @@ This contains my personal Vim configuration and plugins. The idea is to replace 
 
 #### Pushing config to new machine:
 
+Delete the existing .vim folder. Make sure you don't have anything important in there!
 ```
 cd
 git clone git@github.com:dressel/dotvim.git .vim
