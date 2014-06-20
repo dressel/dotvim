@@ -8,6 +8,7 @@ Delete the existing .vim folder. Make sure you don't have anything important in 
 ```
 cd
 git clone git@github.com:dressel/dotvim.git .vim
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 echo "runtime vimrc" > .vimrc
 ```
 #### Source
