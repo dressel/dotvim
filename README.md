@@ -1,6 +1,6 @@
 # dotvim
 
-This is contains my personal Vim configuration and plugins. The idea is to replace the .vim folder on any machine with this. This .vim folder also contains a vimrc file, which performs the function of the .vimrc file. Because Vim expects .vimrc in the home directory, you must create a .vimrc file that simply has the one line "runtime vimrc". Then the settings from /.vim/vimrc will kick in.
+This contains my personal Vim configuration and plugins. The idea is to replace the .vim folder on any machine with this. This .vim folder also contains a vimrc file, which performs the function of the .vimrc file. Because Vim expects .vimrc in the home directory, you must create a .vimrc file that simply has the one line "runtime vimrc". Then the settings from /.vim/vimrc will kick in.
 
 #### Pushing config to new machine:
 
