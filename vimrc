@@ -34,3 +34,15 @@ filetype plugin indent on		" turn filetype back on
 " Highlight search
 " :nohlsearch to get rid of it
 :set hlsearch
+
+" GOING OVER 80 CHARACTERS?
+" Stack Overflow solution: 
+" Surrounds any 81st char and all following chars whenever you get to 80 chars
+" or more
+"highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+"match OverLength /\%81v.\+/
+"
+" Damian Conway solution:
+" Just surrounds 81st char in magenta whenever you get to 80 chars or more.
+highlight ColorColumn ctermbg=magenta
+call matchadd('ColorColumn', '\%81v', 100)
