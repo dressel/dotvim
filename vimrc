@@ -1,13 +1,31 @@
 " Begin Vundle chunk
+"
 set nocompatible				" required
 filetype off					" required, turn on after Vundle
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'		" Required for Vundle
 Plugin 'JuliaLang/julia-vim'	" Julia plugin
+Plugin 'altercation/vim-colors-solarized'
 call vundle#end()
 filetype plugin indent on		" turn filetype back on
 " End Vundle chunk
+
+" Solarized Colors
+" 0 = not solarized
+" 1 = solarized
+" I played around with this when I was trying to solarize my color scheme
+" I've basically decided not to do that, but leave this in here.
+if 0
+	set t_Co=16
+	syntax enable
+	set background=dark
+	colorscheme solarized
+else
+	" Make comment text font color lighter to read in the dark
+	" Only do if not solarized
+	:hi Comment ctermfg=6
+endif
 
 
  " Line numbers
@@ -28,9 +46,6 @@ filetype plugin indent on		" turn filetype back on
 " so enter enters a new line
 :nnoremap <CR> o<Esc>
 
-" Make comment text font color lighter to read in the dark
-:hi Comment ctermfg=6
-
 " Highlight search
 " :nohlsearch to get rid of it
 :set hlsearch
@@ -46,3 +61,6 @@ filetype plugin indent on		" turn filetype back on
 " Just surrounds 81st char in magenta whenever you get to 80 chars or more.
 highlight ColorColumn ctermbg=magenta
 call matchadd('ColorColumn', '\%81v', 100)
+
+" Print line numbers if you print
+set printoptions=number:y
