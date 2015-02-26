@@ -50,3 +50,6 @@ call matchadd('ColorColumn', '\%81v', 100)
 
 " Print line numbers if you print
 set printoptions=number:y
+
+" Make sure it recognizes .md files as markdown
+au BufRead,BufNewFile *.md set filetype=markdown
