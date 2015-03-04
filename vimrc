@@ -12,7 +12,7 @@ filetype plugin indent on		" turn filetype back on
 " Make comment text font color lighter to read in the dark
 :hi Comment ctermfg=6
 
- " Line numbers
+" Line numbers
 :set nu
 
 " Map ;; and jk to escape in insert mode
