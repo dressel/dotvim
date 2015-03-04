@@ -16,3 +16,15 @@ After this, enter vim and type the command
 :PluginInstall
 ```
 
+### Curstom Commands
+I added a couple of custom commands for switching the tab setup.
+This way I don't have to go into the .vimrc to switch.
+These commands are:
+
+`Tab4` Sets tab width to 4 spaces, but tabs are their own characters
+`Tab2` Sets tab width to 2 spaces, and tabs are two spaces (not separate)
+
+To use one of them, just call them like a standard command.
+```
+:Tab2
+```

@@ -30,6 +30,10 @@ filetype plugin indent on		" turn filetype back on
 "for tabs to be 2 (when editing people's stuff who use 2)
 ":set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 
+" Command to switch between tab options
+command Tab4 set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
+command Tab2 set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+
 " so enter enters a new line
 :nnoremap <CR> o<Esc>
 
