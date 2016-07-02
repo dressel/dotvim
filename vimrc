@@ -5,6 +5,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'		" Required for Vundle
 Plugin 'JuliaLang/julia-vim'	" Julia plugin
+Plugin 'ConradIrwin/vim-bracketed-paste'	" for pasting good
 call vundle#end()
 filetype plugin indent on		" turn filetype back on
 " End Vundle chunk
@@ -15,14 +16,17 @@ filetype plugin indent on		" turn filetype back on
 " Line numbers
 :set nu
 
+" clipboard copying
+:set clipboard=unnamedplus
+
 " Map ;; and jk to escape in insert mode
-:inoremap ;; <Esc>
+":inoremap ;; <Esc>
 :inoremap jk <Esc>
 
 " Map ; to : in command mode.
 " ; will now initiate commands (easier than :, no shift)
-:nnoremap ; :
-:nnoremap : ;
+":nnoremap ; :
+":nnoremap : ;
 
 "for tabs to be 4
 :set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
