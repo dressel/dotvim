@@ -6,12 +6,16 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'		" Required for Vundle
 Plugin 'JuliaLang/julia-vim'	" Julia plugin
 Plugin 'ConradIrwin/vim-bracketed-paste'	" for pasting good
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'lervag/vimtex'
 call vundle#end()
 filetype plugin indent on		" turn filetype back on
 " End Vundle chunk
 
 " Make comment text font color lighter to read in the dark
 :hi Comment ctermfg=6
+colorscheme elflord
+"colorscheme desert
 
 " Line numbers
 :set nu
@@ -61,3 +65,6 @@ set printoptions=number:y
 
 " Make sure it recognizes .md files as markdown
 au BufRead,BufNewFile *.md set filetype=markdown
+
+" For vimtex
+let g:vimtex_latexmk_options = '-pdf -shell-escape -verbose -file-line-error -synctex=1 -interaction=nonstopmode'
