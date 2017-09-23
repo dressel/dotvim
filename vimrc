@@ -68,3 +68,5 @@ au BufRead,BufNewFile *.md set filetype=markdown
 
 " For vimtex
 let g:vimtex_latexmk_options = '-pdf -shell-escape -verbose -file-line-error -synctex=1 -interaction=nonstopmode'
+
+let g:vimtex_compiler_latexmk = {'callback' : 0}
