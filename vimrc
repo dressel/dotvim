@@ -33,7 +33,7 @@ colorscheme elflord
 ":nnoremap : ;
 
 "for tabs to be 4
-:set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
+:set tabstop=4 softtabstop=4 shiftwidth=4 expandtab
 
 "for tabs to be 2 (when editing people's stuff who use 2)
 ":set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
